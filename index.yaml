@@ -7,8 +7,6 @@ entries:
     description: A Helm chart for RabbitMQ with stomp plugin.
     digest: b1ab933f3211e2c153d6b26223b9ec0045b1909512c45b8c5e4800e55efbb886
     name: rabbitmq-stomp
-    sources:
-    - https://github.com/spy86/rabbitmq-stomp
     type: application
     urls:
     - https://github.com/spy86/rabbitmq-stomp/releases/download/rabbitmq-stomp-0.1.0/rabbitmq-stomp-0.1.0.tgz
