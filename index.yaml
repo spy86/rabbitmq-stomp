@@ -3,12 +3,14 @@ entries:
   rabbitmq-stomp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-09T21:11:37.1242906+02:00"
+    created: "2022-05-09T21:29:21.658729+02:00"
     description: A Helm chart for RabbitMQ with stomp plugin.
-    digest: b1ab933f3211e2c153d6b26223b9ec0045b1909512c45b8c5e4800e55efbb886
+    digest: db6e7c0ef799f5c1323592e182b41b419128b0660949859583dc531d43171852
     name: rabbitmq-stomp
+    sources:
+    - https://github.com/spy86/rabbitmq-stomp
     type: application
     urls:
-    - https://github.com/spy86/rabbitmq-stomp/releases/download/rabbitmq-stomp-0.1.0/rabbitmq-stomp-0.1.0.tgz
+    - https://github.com/spy86/rabbitmq-stomp/rabbitmq-stomp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-09T21:11:37.1232931+02:00"
+generated: "2022-05-09T21:29:21.6577316+02:00"
