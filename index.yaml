@@ -1,0 +1,16 @@
+apiVersion: v1
+entries:
+  rabbitmq-stomp:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-09T20:43:19.1112426+02:00"
+    description: A Helm chart for RabbitMQ with stomp plugin.
+    digest: 06b381e1fea247781aec5ade44b7475a35b39420627068426f9067a600ac0e8e
+    name: rabbitmq-stomp
+    sources:
+    - https://github.com/spy86/docker-rabbitmq-stomp
+    type: application
+    urls:
+    - https://github.com/spy86/docker-rabbitmq-stomp/rabbitmq-stomp-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-05-09T20:43:19.1102455+02:00"
