@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "rabbitmq-stomp.fullname" . }}
+  namespace: {{ .Values.namespace.name }}
+  labels:
+    {{- include "rabbitmq-stomp.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+  - name: {{ .Values.service.name1 }}
+    port: {{ .Values.service.port1 }}
+  - name: {{ .Values.service.name2 }}
+    port: {{ .Values.service.port2 }}
+  - name: {{ .Values.service.name3 }}
+    port: {{ .Values.service.port3 }}
+  selector:
+    {{- include "rabbitmq-stomp.selectorLabels" . | nindent 4 }}
