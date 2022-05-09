@@ -11,6 +11,6 @@ entries:
     - https://github.com/spy86/docker-rabbitmq-stomp
     type: application
     urls:
-    - https://github.com/spy86/docker-rabbitmq-stomp/rabbitmq-stomp-0.1.0.tgz
+    - https://github.com/spy86/docker-rabbitmq-stomp/releases/download/rabbitmq-stomp-0.1.0/rabbitmq-stomp-0.1.0.tgz
     version: 0.1.0
 generated: "2022-05-09T20:43:19.1102455+02:00"
