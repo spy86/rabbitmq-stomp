@@ -3,9 +3,9 @@ entries:
   rabbitmq-stomp:
   - apiVersion: v2
     appVersion: 3.10.0
-    created: "2022-05-10T19:22:35.1451444+02:00"
+    created: "2022-05-10T18:59:46.62945018Z"
     description: A Helm chart for RabbitMQ with stomp plugin.
-    digest: 4e61ecd4d4e71676446fbc315e02cca42108a0439fcb06ef185352c5e62ec41d
+    digest: ef2d972dfec201b4188cbc5b9ef1f83be97754d8445144642f91fbae003061fb
     home: https://www.rabbitmq.com
     icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
     keywords:
@@ -22,7 +22,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-10T19:22:35.1435125+02:00"
+    created: "2022-05-10T18:59:46.628732972Z"
     description: A Helm chart for RabbitMQ with stomp plugin.
     digest: db6e7c0ef799f5c1323592e182b41b419128b0660949859583dc531d43171852
     name: rabbitmq-stomp
@@ -32,4 +32,4 @@ entries:
     urls:
     - https://spy86.github.io/rabbitmq-stomp/rabbitmq-stomp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-10T19:22:35.1424212+02:00"
+generated: "2022-05-10T18:59:46.62397312Z"
