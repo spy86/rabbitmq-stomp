@@ -3,12 +3,31 @@ entries:
   rabbitmq-stomp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-05-09T21:29:21.658729+02:00"
+    created: "2022-05-10T19:00:59.5855901+02:00"
+    description: A Helm chart for RabbitMQ with stomp plugin.
+    digest: 06a7e2cfe3ce572c8b983dc639388999a82f5a7ca6a5cfcec4efa3e32dcb2016
+    keywords:
+    - rabbitmq
+    - message queue
+    - amqp
+    - stomp
+    name: rabbitmq-stomp
+    sources:
+    - https://github.com/spy86/docker-rabbitmq-stomp
+    type: application
+    urls:
+    - https://spy86.github.io/rabbitmq-stomp/rabbitmq-stomp-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-10T19:00:59.5845603+02:00"
     description: A Helm chart for RabbitMQ with stomp plugin.
     digest: db6e7c0ef799f5c1323592e182b41b419128b0660949859583dc531d43171852
     name: rabbitmq-stomp
+    sources:
+    - https://github.com/spy86/rabbitmq-stomp
     type: application
     urls:
     - https://spy86.github.io/rabbitmq-stomp/rabbitmq-stomp-0.1.0.tgz
     version: 0.1.0
-generated: "2022-05-09T21:29:21.6577316+02:00"
+generated: "2022-05-10T19:00:59.5835633+02:00"
