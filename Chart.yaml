@@ -3,7 +3,7 @@ name: rabbitmq-stomp
 description: A Helm chart for RabbitMQ with stomp plugin.
 type: application
 version: 0.1.1
-appVersion: "1.16.0"
+appVersion: "3.10.0"
 deprecated: false
 keywords:
 - rabbitmq
@@ -12,4 +12,6 @@ keywords:
 - stomp
 sources:
 - https://github.com/spy86/docker-rabbitmq-stomp
+icon: https://bitnami.com/assets/stacks/rabbitmq/img/rabbitmq-stack-220x234.png
+home: https://www.rabbitmq.com
 maintainers: []
