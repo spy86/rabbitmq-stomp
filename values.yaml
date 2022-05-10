@@ -1,50 +1,45 @@
-# Number of replica
+# -- Configure the replicas for the pods
 replicaCount: 1
-# Name of namespace 
+# -- Configure default namespace
 namespace: 
   name: default
-
+# -- Image to use for deploying
 image:
   repository: spy86/rabbitmq-stomp
   pullPolicy: Always
-  # Overrides the image tag whose default is the chart appVersion.
+  # -- Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
-
+# -- Secret for container registry
 imagePullSecrets: [ ]
+# -- Overrides the name
 nameOverride: ""
+# -- Overrides the fullname
 fullnameOverride: ""
-
+# -- Configuration for service account
 serviceAccount:
-  # Specifies whether a service account should be created
+  # -- Specifies whether a service account should be created
   create: true
-  # Annotations to add to the service account
+  # -- Annotations to add to the service account
   annotations: {}
-  # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
+  # -- The name of the service account to use.
+  # -- If not set and create is true, a name is generated using the fullname template
   name: ""
-# Additional annotations will be added to the pods of this component as well as to your Deployments or StatefulSets used to create the pods.
+# -- Additional annotations will be added to the pods of this component as well as to your Deployments or StatefulSets used to create the pods.
 podAnnotations: {}
-# Pod SecurityContext settings
-podSecurityContext:
-  fsGroup: 2000
-# SecurityContext settings
-securityContext:
-  capabilities:
-    drop:
-    - ALL
-  readOnlyRootFilesystem: true
-  runAsNonRoot: true
-  runAsUser: 1000
-# Ports on which the services are exposed
+# -- Pod SecurityContext settings
+podSecurityContext: {}
+# -- SecurityContext settings
+securityContext: {}
+# -- Service Type which are use to expose service
 service:
   type: ClusterIP
   port1: 5672
-  name1: AMQP
+  name1: amqp
   port2: 15672
-  name2: MGMT-UI 
+  name2: mgmt-ui 
   port3: 61613
-  name3: STOMP
-# CPU&Mem limits
+  name3: stomp
+# -- Configuration for resources limits (CPU/MEM requests and limits)
 resources:
    limits:
      cpu: 500m
@@ -52,16 +47,16 @@ resources:
    requests:
      cpu: 20m
      memory: 512Mi
-# Autoscaling configuration
+# -- Configuration for Autoscaling
 autoscaling:
   enabled: false
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   targetMemoryUtilizationPercentage: 80
-# NodeSelector settings
+# -- Configuration for nodeSelector
 nodeSelector: {}
-# Tolerations settings
+# -- Configuration for tolerations
 tolerations: []
-# Affinity
+# -- Configuration for affinity
 affinity: {}

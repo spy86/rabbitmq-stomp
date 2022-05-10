@@ -2,6 +2,14 @@ apiVersion: v2
 name: rabbitmq-stomp
 description: A Helm chart for RabbitMQ with stomp plugin.
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: "1.16.0"
-sources: [ "https://github.com/spy86/rabbitmq-stomp" ]
+deprecated: false
+keywords:
+- rabbitmq
+- message queue
+- amqp
+- stomp
+sources:
+- https://github.com/spy86/docker-rabbitmq-stomp
+maintainers: []
